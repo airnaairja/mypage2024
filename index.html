@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Airsakura</title>
-    <link rel="stylesheet" href = "styles.css" >
-</head>
-<body>
-    <img src = "profile.jpg" alt = ""style="width: 50%; height: auto;">
-    <h1>Piyanooch Wijitkulsawat</h1>
-    <a href = "https://www.pim.ac.th/"> ไปยังเว็บไซด์ของหน่วยงาน </a><br>
-    <a href = "contact.html"> Contact </a>
+    <link rel="stylesheet" href = "styles.css" >   
+    <style>
+        body {
+	background-color: #FFFFE0;
+	}
+    </style>
 
-    
-    <h3>ประสบการณ์ทำงาน</h3>
+</head>
+<!--<body style="background-color:#FFC55A;">-->
+   <div class ="profile">
+    <table>
+        <!--<tbody>-->
+        <tr>
+            <td>
+                <img src="profile.jpg" width="300" height="300" align="left">
+            </td>
+            <td>
+                <h1><i><font style="color:#ADFF2F">Piyanooch Wijitkulsawat</font></i></h1>
+                <h3><font style="color:#ADFF2F">Gosoft</font></h3>
+                <h3><font style="color:#ADFF2F">Point Of Sale</font></h3>
+            </td>
+       </tr>
+       <!--</tbody>-->
+    </table>
+    <h1><em><strong><font style="color:#00FA9A">สวัสดีค่ะ เราชื่อเล่นชื่อแอ ยินดีที่ได้รู้จักทุกคน</font></em></strong></h1>
+</div>
+    <hr style="border-style: dotted solid;">
     <!--<ul>
         <li>2023 - Present Gosoft</li>
         <li>2022 - 2023 SCBTECHX</li>
@@ -22,8 +39,9 @@
     </ul>-->
 
     <!--ทำให้ List ออกมาเป็น Table จะสวยกว่า-->
-
-    <table>
+    <div class ="experience">
+        <h1><i>ประสบการณ์ทำงาน</i></h1>
+    <table = class="work">
         <thead>
             <tr>
                 <th>
@@ -37,7 +55,7 @@
         
         <tr>
             <td>2023 - Present</td>
-            <td>Present Gosoft</td>
+            <td>Gosoft</td>
         </tr>
         <tr>
             <td>2022 - 2023</td>
@@ -52,5 +70,5 @@
             <td>Gosoft</td>
         </tr>
     </table>
-</body>
+    <div>
 </html>
