@@ -1,74 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Airsakura</title>
-    <link rel="stylesheet" href = "styles.css" >   
-    <style>
-        body {
-	background-color: #FFFFE0;
-	}
-    </style>
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
-<!--<body style="background-color:#FFC55A;">-->
-   <div class ="profile">
-    <table>
-        <!--<tbody>-->
-        <tr>
-            <td>
-                <img src="profile.jpg" width="300" height="300" align="left">
-            </td>
-            <td>
-                <h1><i><font style="color:#ADFF2F">Piyanooch Wijitkulsawat</font></i></h1>
-                <h3><font style="color:#ADFF2F">Gosoft</font></h3>
-                <h3><font style="color:#ADFF2F">Point Of Sale</font></h3>
-            </td>
-       </tr>
-       <!--</tbody>-->
-    </table>
-    <h1><em><strong><font style="color:#00FA9A">สวัสดีค่ะ เราชื่อเล่นชื่อแอ ยินดีที่ได้รู้จักทุกคน</font></em></strong></h1>
-</div>
-    <hr style="border-style: dotted solid;">
-    <!--<ul>
-        <li>2023 - Present Gosoft</li>
-        <li>2022 - 2023 SCBTECHX</li>
-        <li>2021 - 2022 Makro</li>
-        <li>2014 - 2021 Gosoft</li>
-    </ul>-->
+<body>
+   <div class="quiz-container">
+       <h1>ระบบข้อสอบอย่างง่าย Simple Quiz</h1>
+       <div class="question">
+           <p id="question1">PIM ย่อมาจากอะไร ?</p>
+           <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+           <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+           <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+           <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+           <button class="button" onclick="checkAnswer('e')">E) วอนยอง</button>
+           <p class="result" id="result1"></p>
+       </div>
+       <div class="question">
+           <p id="question2">POS ย่อมาจากอะไร ?</p>
+           <button class="button" onclick="checkAnswer2('a')">A) Point Of Sale</button>
+           <button class="button" onclick="checkAnswer2('b')">B) Post Of sale</button>
+           <button class="button" onclick="checkAnswer2('c')">C) Pos Of Sale</button>
+           <button class="button" onclick="checkAnswer2('d')">D) Put Of Show</button>
+           <button class="button" onclick="checkAnswer2('e')">E) Point Of Soon</button>
+           <p class="result" id="result2"></p>
+       </div>
+       <p id="summary"></p>
+   </div>
 
-    <!--ทำให้ List ออกมาเป็น Table จะสวยกว่า-->
-    <div class ="experience">
-        <h1><i>ประสบการณ์ทำงาน</i></h1>
-    <table = class="work">
-        <thead>
-            <tr>
-                <th>
-                Year
-                </th>
-                 <th>
-                Work Place
-                </th>
-            </tr>
-        </thead>
-        
-        <tr>
-            <td>2023 - Present</td>
-            <td>Gosoft</td>
-        </tr>
-        <tr>
-            <td>2022 - 2023</td>
-            <td>SCBTECHX</td>
-        </tr>
-        <tr>
-            <td>2021 - 2022</td>
-            <td>Makro</td>
-        </tr>
-        <tr>
-            <td>2014 - 2021</td>
-            <td>Gosoft</td>
-        </tr>
-    </table>
-    <div>
+   <script src="app.js"></script>
+</body>
 </html>
